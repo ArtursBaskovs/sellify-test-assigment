@@ -1,0 +1,47 @@
+// src/styles/global.scss
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 0.1em;
+}
+
+p,
+button,
+label,
+small {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
