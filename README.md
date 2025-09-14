@@ -1,4 +1,4 @@
-# How to run
+# How to run from bash
 
 git clone https://github.com/ArtursBaskovs/sellify-test-assigment.git
 
