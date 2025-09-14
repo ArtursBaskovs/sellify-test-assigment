@@ -1,0 +1,13 @@
+.blurOverlay {
+    position: fixed;
+    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.048);
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 999;
+}
+.above-blurOverlay {
+    z-index: 1000;
+}

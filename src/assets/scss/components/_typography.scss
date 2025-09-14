@@ -1,0 +1,25 @@
+//typography
+.products-table {
+
+}
+h2{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+a{
+    color: $primary-text-color;
+    &:hover {
+        color: $text-hover;
+    }
+}
+.small-text {
+    font-size: .8rem;
+    font-weight: bolder;
+    color: $primary-text-color-lighter;
+}
+.center-title {
+    text-align: center;
+}
+.blue-title {
+    color: $secondary-text-color;
+}

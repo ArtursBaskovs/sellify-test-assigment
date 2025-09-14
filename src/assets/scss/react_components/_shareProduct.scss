@@ -1,0 +1,64 @@
+//layout
+.share-product-window{
+    //position it to center of the page
+    width: 30% !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    
+    //innder layout
+    padding: 0.8rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+    @media (max-width: 768px) {
+        width: 90% !important;
+        padding: 0.8rem 1rem 2rem 1rem;
+    }
+
+    img{
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+.product-to-share {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 0 1rem 0;
+    @media (max-width: 768px) {
+        
+    }
+}
+.info-column-share {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 0 1rem 0 1rem;
+}
+.share-btn-container {
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+//styling
+.share-product-window, .product-to-share{
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(119, 147, 158);
+    border-width: 2px 2px 2px 2px;
+}
+.product-to-share {
+
+}

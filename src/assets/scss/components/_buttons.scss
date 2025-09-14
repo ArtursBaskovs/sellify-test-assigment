@@ -1,0 +1,40 @@
+.dots-btn {
+    font-size: 3rem;
+    color: $primary-text-color-lighter;
+    pointer-events: all;
+    cursor: pointer;
+    &:hover {
+        color: $text-hover;
+    }
+}
+
+.share-btn {
+    background-color: white;
+    color: $primary-text-color;
+    display: flex;
+    flex-direction: row;
+    font-weight:600;
+    gap: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: .5rem 1rem .5rem 1rem;
+}
+
+$purpleBtnColor: rgb(113, 92, 233);
+.purple-btn {
+    color: $purpleBtnColor;
+    border: 1px solid $purpleBtnColor;
+    &:hover {
+        color: lighten($purpleBtnColor, 10%);
+        border: 1px solid lighten($purpleBtnColor, 10%);
+    }
+}
+$blueBtnColor: rgb(20, 155, 233);
+.blue-btn {
+    color: $blueBtnColor;
+    border: 1px solid $blueBtnColor;
+    &:hover {
+        color: lighten($blueBtnColor, 10%);
+        border: 1px solid lighten($blueBtnColor, 10%);
+    }
+}

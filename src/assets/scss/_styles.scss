@@ -5,6 +5,10 @@
 @import './abstracts/variables';
 
 //components
-@import './components/';
-
+@import './components/buttons';
+@import './components/typography';
+@import './components/overlay';
 //react components
+@import './react_components/productTable';
+@import './react_components/productPage';
+@import './react_components/shareProduct';

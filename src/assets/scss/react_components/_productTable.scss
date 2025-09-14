@@ -1,0 +1,199 @@
+
+//layout
+.products-table {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 768px) {
+        width: 90%;
+        //justify-content: center;
+        align-items: center;
+    }
+}
+
+.products-table-record{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    min-height: 10rem;
+    max-height: 10rem;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        max-height: fit-content;
+    }
+
+}
+
+.product-block {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        max-height: fit-content;
+        align-items: center;
+    }
+    img{
+        width: 150px;
+        height: 100px;
+        object-fit: cover; //to avoid ugly stretching 
+        //object-position: center;
+        @media (max-width: 768px) {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .info-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            max-height: fit-content;
+            align-items: flex-start;
+            width: 100%;
+            padding-left: 0 !important;
+            
+        }   
+
+        a, h2, span{
+            margin: 0px;
+            white-space: nowrap;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            @media (max-width: 768px) {
+                white-space: wrap;
+            }
+        }
+        padding: 1rem;
+    }
+}
+.category-block {
+    display: flex;
+    justify-content:flex-start;
+    white-space: wrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }   
+}
+.price-block {
+    display: flex;
+    justify-content: flex-start;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+}
+.vartical-dots-block {
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 768px) {
+        position: absolute;
+        top: -70px;
+        left: -0px;
+        height: 0px;
+    }
+}
+.table-column-titles{
+    display: flex;
+    flex-direction: row;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+//product block spacing in one record
+.product-block, .product-h { min-width: 60%; max-width: 60%; }
+.category-block, .category-h { min-width: 25%; max-width: 25%; }
+.price-block, .price-h { min-width: 10%; max-width: 10%; }
+.vartical-dots-block { min-width: 5%; max-width: 30%; }
+
+@media (max-width: 768px) {
+    .product-block, .product-h { min-width: 100%; max-width: 60%; }
+    .category-block, .category-h { min-width: 100%; max-width: 25%; }
+    .price-block, .price-h { min-width: 100%; max-width: 10%; }
+    .vartical-dots-block { min-width: 100%; max-width: 30%; }
+}   
+
+//styling
+.products-table {
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(119, 147, 158);
+    border-width: 2px 2px 0px 2px;
+}
+.products-table-record{
+    border-bottom: 2px solid rgb(119, 147, 158);
+}
+.table-column-titles {
+    border-bottom: 1.5px solid rgb(119, 147, 158);
+}
+.products-table {
+    //background-color: rgba(0, 255, 21, 0.103);
+}
+
+//dropdown
+.vartical-dots-block{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 50px;
+    left: -80px;
+    @media (max-width: 768px) {
+        top: -40px;
+        left: 45%;
+    }
+
+    border-style: solid;
+    border-color: rgb(119, 147, 158);
+    border-width: 2px 2px 2px 2px;
+    button {
+        min-width: 100%;
+        outline: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        color: $primary-text-color;
+        background-color: white;
+        border: none;
+        font-weight: 600;
+        &:hover {
+            border: none;
+        }
+    }
+    $red: rgb(146, 14, 14);
+    .delete-btn {
+        color: $red;
+        &:hover{
+            color: lighten($red, 20%);
+        }
+    }
+    $blue: rgb(10, 75, 112);
+    .share-btn {
+        color: $blue;
+        &:hover{
+            color: lighten($blue, 20%);
+        }
+    }
+    .btn-icon{
+        font-size: 4rem;
+    }
+    
+}
+
+
+
